@@ -93,3 +93,34 @@
     border-radius: 10px;
     outline: none;
  }
+ .shimmer, .shimmer2 {
+   width: 250px;
+   height: 350px;
+   background: linear-gradient(to left, #e6e6e6 0%, #f2f2f2 50%, #e6e6e6 100%);
+   background-size: 200% 100%;
+   animation: shimmer 0.5s infinite linear;
+   margin: 10px;
+}
+
+ .shimmer-container{
+   height: fit-content;
+   display: flex;
+   flex-wrap: wrap;
+  
+ }
+ .button{
+   width: 100px;
+   cursor: pointer;
+ }
+ .LinkTag{
+   text-decoration-line: none;
+   color: black;
+ }
+ @keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}

@@ -17,7 +17,7 @@ export const ResturantCard = (props) => {
     } = resData?.info
 
     return(
-        <div class="Restra-Cards">
+        <div className="Restra-Cards">
             <h3 id="h3">
                 <i>{name}</i>
             </h3>
